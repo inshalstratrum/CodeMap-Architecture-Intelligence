@@ -1,0 +1,86 @@
+@import '@xyflow/react/dist/style.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #0b0f17;
+  color: #f1f5f9;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  user-select: none;
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* React Flow customizations */
+.react-flow__pane {
+  cursor: grab;
+}
+.react-flow__pane:active {
+  cursor: grabbing;
+}
+.react-flow__edge-path {
+  stroke-width: 2.2;
+}
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #38bdf8 !important;
+  stroke-width: 3 !important;
+}
+
+/* Custom grid background */
+.dot-grid-bg {
+  background-color: #0b0f17;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Theme 1: Obsidian Dark (Default) */
+.theme-obsidian .dot-grid-bg {
+  background-color: #090d14;
+  background-image: radial-gradient(rgba(56, 189, 248, 0.12) 1px, transparent 1px);
+}
+
+/* Theme 2: Cyberpunk Neon */
+.theme-cyberpunk .dot-grid-bg {
+  background-color: #070714;
+  background-image: radial-gradient(rgba(236, 72, 153, 0.14) 1px, transparent 1px);
+}
+
+/* Theme 3: Midnight Navy */
+.theme-midnight .dot-grid-bg {
+  background-color: #090e1a;
+  background-image: radial-gradient(rgba(96, 165, 250, 0.12) 1px, transparent 1px);
+}
+
+/* Theme 4: Technical Clean Light Mode */
+.theme-light, .light {
+  color-scheme: light;
+}
+.theme-light .dot-grid-bg, .light .dot-grid-bg {
+  background-color: #f8fafc;
+  background-image: radial-gradient(rgba(15, 23, 42, 0.15) 1px, transparent 1px);
+}

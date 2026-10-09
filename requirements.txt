@@ -1,0 +1,3 @@
+# CodeMap Core uses only the Python 3 Standard Library (no pip dependencies required for core analysis).
+# Optional dependencies for enhanced HTTP networking and testing:
+requests>=2.31.0

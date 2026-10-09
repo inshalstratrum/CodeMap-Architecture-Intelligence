@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.venv/
+venv/
+env/
+*.log
+
+# CodeMap Local State & Vault Cache
+.codemap/
+.archive_simple_thinker/
+
+# Node / React Visualizer UI
+visualizer-ui/node_modules/
+visualizer-ui/dist/
+visualizer-ui/.pnpm-store/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
